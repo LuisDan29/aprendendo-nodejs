@@ -1,0 +1,21 @@
+{
+  "name": "metodos-http",
+  "version": "1.0.0",
+  "description": "Servidor para testar os métodos HTTP básicos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": [],
+  "author": "Luís Dantas",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.0.1",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

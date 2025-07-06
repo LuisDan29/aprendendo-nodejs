@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color1: #03A65A;
+    --color2: #2D55A6;
+    --color3: #F288A4;
+    --color4: #F2CB05;
+    --color5: #F26938;
+
+    --color6: #fff;
+    --color7: #393f4a40;
+    --color8: #181722;
+    --color9: #393F4A;
+}
+
+body {
+    height: 100%;
+    width: 100vw;
+}
+
+#main {
+    height: 100%;
+    width: 100vw;
+    padding: 89px 144px 34px 144px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 21px;
+}
+
+#main span {
+    font-family: "Readex Pro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: xx-large;
+
+    padding: 3px 8px;
+    border-radius: 3px;
+    color: var(--color6);
+}
+
+#main p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    text-align: center;
+    font-size: larger;
+    color: var(--color9);
+}
+
+#second {
+    height: 100%;
+    width: 100vw;
+    padding: 0 144px 89px 144px;
+
+    display: flex;
+    justify-content: center;
+}
+
+#paleta {
+    height: 100%;
+    width: 100%;
+    border: solid 2px var(--color7);
+    border-radius: 21px;
+}
+
+.toolbar {
+    height: 55px;
+    width: 100%;
+    border-bottom: solid 2px var(--color7);
+    display: flex;
+    align-items: center;
+    padding: 0 21px;
+}
+
+.add_button {
+    background-color: transparent;
+    color: var(--color7);
+    font-size: 34px;
+}
+
+.grid {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 21px;
+    padding: 21px;
+}
+
+@media only screen and (max-width: 700px) {
+    #main {
+        padding: 55px 34px 34px 34px;
+    }
+
+    #main span {
+        font-size: larger;
+    }
+
+    #main p {
+        font-size: medium;
+    }
+
+    #second {
+        padding: 0 21px 55px 21px;
+    }
+}

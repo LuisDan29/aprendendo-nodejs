@@ -17,14 +17,17 @@
     --color8: #181722;
     --color9: #393F4A;
 }
-
-body {
-    height: 100%;
+html, body {
+    height: 100vh;
     width: 100vw;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+}
+
 #main {
-    height: 100%;
     width: 100vw;
     padding: 89px 144px 34px 144px;
 
@@ -32,6 +35,7 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 21px;
+    flex-shrink: 0;
 }
 
 #main span {
@@ -54,43 +58,49 @@ body {
     color: var(--color9);
 }
 
-#second {
-    height: 100%;
+#paleta {
     width: 100vw;
     padding: 0 144px 89px 144px;
 
+    flex: 1;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    gap: 8px;
 }
 
-#paleta {
+.form {
+    display: flex;
+    gap: 8px;
+}
+
+.form input {
+    background-color: var(--color7);
+    color: var(--color9);
+    border-radius: 13px;
+    padding: 5px 13px;
+    font-size: smaller;
+}
+
+.form input:focus {
+    outline: none;
+}
+
+#grid {
     height: 100%;
     width: 100%;
-    border: solid 2px var(--color7);
-    border-radius: 21px;
+
+    background-color: var(--color7);
+    border-radius: 3px;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 13px;
+    padding: 13px;
 }
 
-.toolbar {
-    height: 55px;
-    width: 100%;
-    border-bottom: solid 2px var(--color7);
-    display: flex;
-    align-items: center;
-    padding: 0 21px;
-}
-
-.add_button {
-    background-color: transparent;
-    color: var(--color7);
-    font-size: 34px;
-}
-
-.grid {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    gap: 21px;
-    padding: 21px;
+.cor {
+    height: 144px;
 }
 
 @media only screen and (max-width: 700px) {
@@ -106,7 +116,7 @@ body {
         font-size: medium;
     }
 
-    #second {
+    #paleta {
         padding: 0 21px 55px 21px;
     }
 }

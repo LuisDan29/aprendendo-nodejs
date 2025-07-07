@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "nome": "Hulk",
+        "hex": "#03A65A"
+    },
+    {
+        "id": 2,
+        "nome": "Oceano",
+        "hex": "#2D55A6"
+    },
+    {
+        "id": 3,
+        "nome": "Algodão Doce",
+        "hex": "#F288A4"
+    },
+    {
+        "id": 4,
+        "nome": "Gema de ovo",
+        "hex": "#F2CB05"
+    },
+    {
+        "id": 5,
+        "nome": "Mexirica",
+        "hex": "#F26938"
+    },
+    {
+        "id": 6,
+        "nome": "Apagão",
+        "hex": "#181722"
+    }
+]

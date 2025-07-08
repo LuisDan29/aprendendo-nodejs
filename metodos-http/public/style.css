@@ -28,7 +28,7 @@ body {
     flex-direction: column;
 }
 
-#main {
+#hero {
     width: 100vw;
     padding: 89px 144px 34px 144px;
 
@@ -39,7 +39,7 @@ body {
     flex-shrink: 0;
 }
 
-#main span {
+#hero span {
     font-family: "Readex Pro", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -51,7 +51,7 @@ body {
     color: var(--color6);
 }
 
-#main p {
+#hero p {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
     text-align: center;
@@ -70,23 +70,6 @@ body {
     gap: 8px;
 }
 
-.form {
-    display: flex;
-    gap: 8px;
-}
-
-.form input {
-    background-color: var(--color7);
-    color: var(--color9);
-    border-radius: 13px;
-    padding: 5px 13px;
-    font-size: smaller;
-}
-
-.form input:focus {
-    outline: none;
-}
-
 #grid {
     width: 100%;
 
@@ -103,22 +86,18 @@ body {
 .cor {
     aspect-ratio: 1 / 1;
     border-radius: 3px;
+    padding: 8px;
+
+    font-family: "Readex Pro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
-@media only screen and (max-width: 700px) {
-    #main {
-        padding: 55px 34px 34px 34px;
-    }
-
-    #main span {
-        font-size: larger;
-    }
-
-    #main p {
-        font-size: medium;
-    }
-
-    #paleta {
-        padding: 0 21px 55px 21px;
-    }
+.cor .hex {
+    font-weight: 300;
+    font-size: small;
 }

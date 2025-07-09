@@ -101,3 +101,29 @@ body {
     font-weight: 300;
     font-size: small;
 }
+
+#form {
+    display: flex;
+    gap: 8px;
+}
+
+#form input {
+    width: 89px;
+    background-color: var(--color7);
+    padding: 3px 13px;
+    border-radius: 13px;
+    color: var(--color9);
+    transition: all 0.2s;
+}
+
+#form input:focus {
+    outline: none;
+}
+
+#enviar {
+    width: 34px;
+    background-color: var(--color7);
+    padding: 3px 8px;
+    border-radius: 13px;
+    color: var(--color9);
+}

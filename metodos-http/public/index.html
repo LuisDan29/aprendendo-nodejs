@@ -11,7 +11,7 @@
 </head>
 <body>
     <section id="hero">
-        <div class="titulo">
+        <div>
             <span style="background-color: var(--color1);">C</span>
             <span style="background-color: var(--color2);">O</span>
             <span style="background-color: var(--color3);">L</span>
@@ -24,6 +24,11 @@
         <p>Crie sua coleção de cores, organize do seu jeito e nomeie cada tom como quiser. <br>Feito para criativos e artistas, mostre a sua personalidade.</p>
     </section>
     <section id="paleta">
+        <div id="form">
+            <input type="text" name="nome" id="nome" placeholder="nome">
+            <input type="text" name="hex" id="hex" placeholder="#ffffff">
+            <button id="enviar" onclick="postCor()">+</button>
+        </div>
         <div id="grid"></div>
     </section>
 

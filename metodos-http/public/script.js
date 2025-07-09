@@ -1,4 +1,4 @@
-const URL = 'http://localhost:8081';
+const URL = 'http://localhost:3031';
 const GRID = document.getElementById('grid');
 
 async function getPaleta() {
@@ -53,5 +53,25 @@ function setCorTexto(cor) {
         return 'var(--color6)';
     } else {
         return 'var(--color8)';
+    }
+}
+
+function postCor() {
+    console.log(getInputs());
+}
+
+function getInputs() {
+    let nome = document.getElementById('nome').value;
+
+    let hex = document.getElementById('hex').value;
+    // Remove espaços e caracteres inválidos
+    hex = hex.replace(/[^a-fA-F0-9#]/g, '')
+    // Regex para validar cor Hex (3 ou 6 dígitos, com ou sem #)
+    const regexHex = /^#?([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/;
+
+    if (regexHex.test(hex)) {
+        return [nome, hex];
+    } else {
+        return null;
     }
 }
